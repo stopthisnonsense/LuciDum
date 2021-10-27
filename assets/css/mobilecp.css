@@ -1,0 +1,162 @@
+/** 等于或小于550px用于移动设备 **/
+@media screen and (max-width:550px) {
+    .pagination {
+        background: #fff;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+    }
+
+    .pagination .nav-links {
+        min-height: 30px;
+        position: relative;
+        text-align: center;
+    }
+
+    .pagination .current .screen-reader-text {
+        position: static !important;
+    }
+
+    .screen-reader-text {
+        height: 1px;
+        overflow: hidden;
+        position: absolute !important;
+    }
+
+    .page-numbers {
+        display: none;
+        line-height: 25px;
+        padding: 5px;
+    }
+
+    .pagination .page-numbers.current {
+        text-transform: uppercase;
+    }
+
+    .pagination .current {
+        display: inline–block;
+    }
+
+    .pagination .prev,
+    .pagination .next {
+        background: #0088cc;
+        color: #fff;
+        display: inline–block;
+        height: 29px;
+        line-height: 29px;
+        overflow: hidden;
+        padding: 2px 8px;
+        position: absolute;
+        border: 1px solid #0088cc;
+    }
+
+    .pagination .next {
+        border-radius: 0 2px 2px 0
+    }
+
+    .pagination .prev {
+        border-radius: 2px 0 0 2px;
+    }
+
+    .pagination .prev a,
+    .pagination .next a {
+        color: #fff;
+        line-height: 20px;
+        padding: 0;
+        display: inline–block;
+    }
+
+    .pagination .prev {
+        left: 0;
+    }
+
+    .pagination .prev:before {
+        left: -1px;
+    }
+
+    .pagination .next {
+        right: 0;
+    }
+
+    .pagination .next:before {
+        right: -1px;
+    }
+
+
+    .banner-links-content {
+        width: 50%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .request-link a {
+        width: 100%;
+    }
+
+    .show-link {
+        margin-top: 15px;
+    }
+
+    .show-link a {
+        width: 100%;
+    }
+
+    .main-banner h1 {
+        font-size: 36x;
+    }
+
+    .banner-content span {
+        width: 70%;
+    }
+
+    .why-us-content {
+        padding-top: 10px;
+    }
+
+    .home-why-us-footer {
+        font-size: 20px
+    }
+
+    .home-why-us-footer span {
+        font-size: 48px;
+    }
+	  .home-vido video{
+		width:65%;
+	 }
+	
+	.home-flowchart{
+		padding-top:10px;
+	}
+	.founder{
+		padding-top:50px;	
+	}
+	
+	.founder_content{
+		width:75%;
+		justify-content:center;
+	}
+	
+	.div-honor{
+		padding-top:48px;
+	}
+	
+	.div-honor-text{
+		padding-top:10px;
+		padding-bottom:48px;
+		font-size:20px;
+	}
+	
+	.cooperation{
+		padding-bottom:50px;
+		padding-top:30px;
+		width:85%;
+	}
+	
+	.link_man{
+		width:70%;
+		padding-top:48px;
+		padding-bottom:40px;
+	}
+
+}

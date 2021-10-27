@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'AvenirLTStd-Roman';
+  src: url('../fonts/avenir/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/avenir/AvenirLTStd-Roman.otf')  format('opentype'),
+	     url('../fonts/avenir/AvenirLTStd-Roman.woff') format('woff'), url('../fonts/avenir/AvenirLTStd-Roman.ttf')  format('truetype'), url('../fonts/avenir/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirLTStd-Light';
+  src: url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.otf')  format('opentype'),url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.woff') format('woff'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.ttf')  format('truetype'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('../fonts/Avenir%20Heavy/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir%20Heavy/Avenir-Heavy.otf')  format('opentype'),
+	     url('../fonts/Avenir%20Heavy/Avenir-Heavy.woff') format('woff'), url('../fonts/Avenir%20Heavy/Avenir-Heavy.ttf')  format('truetype'), url('../fonts/Avenir%20Heavy/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*************************
+        General Style
+**************************/
+body {
+     font-family: 'AvenirLTStd-Roman';
+}
+p {
+    font-size: 16px;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    color:inherit;
+    font-weight: inherit;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 12px;
+}
+a {
+    text-decoration:none;
+}
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+span {
+    font-family: 'AvenirLTStd-Light';
+    font-size: 13px;
+    margin: 0 20px;
+    color: #2166C5;
+}
+a#loadMore.noContent {
+    display: none;
+}
+.platform-content-detail ul {
+    padding-top: 25px;
+}
+.platform-content-detail h4 {
+    text-align: left;
+}
