@@ -6,7 +6,7 @@ get_header( 'new' );
 ?>
 <div class="wrap wrap--new-home-background">
     <div class="section section--hero">
-        <div class="container">
+        <div class="container section__container">
         <div class="row">
             <div class="col-sm-12 col-lg-6 section__column">
                 <h1 class="section__title">No More Unknowns</h1>
@@ -14,14 +14,14 @@ get_header( 'new' );
                 <a class="section__button" href="#">See More</a>
             </div>
             <div class="col-sm-12 col-lg-6  section__column">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop-mockup.png" alt="">
+                <img class="section__image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop-mockup.png" alt="">
             </div>
         </div>
         </div>
 
     </div>
     <div class="section section--about-new-home">
-        <div class="container">
+        <div class="container section__container">
             <div class="row">
                 <div class="col-sm-12 col-lg-6  section__column">
                     <div class="ratio ratio-16x9">

@@ -1,15 +1,15 @@
 jQuery(document).ready(function ($) {
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > 40) {
-			$('header').addClass('scroll');
+			$('.header').addClass('scroll');
 		} else {
-			$('header').removeClass('scroll');
+			$('.header').removeClass('scroll');
 		}
 	});
 
 	// Mobile Menu
 	$('.mobile-toggler').click(function () {
-		$('.menu nav').toggleClass('active');
+		$('.header nav').toggleClass('active');
 		$('body').toggleClass('stop');
 	});
 	// Team Slider
