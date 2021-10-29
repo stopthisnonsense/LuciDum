@@ -7,14 +7,12 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	$(document).ready(function () {
-		// Mobile Menu
-		$('.mobile-toggler').click(function () {
-			$('.menu nav').toggleClass('active');
-			$('body').toggleClass('stop');
-		});
-		// Team Slider
+	// Mobile Menu
+	$('.mobile-toggler').click(function () {
+		$('.menu nav').toggleClass('active');
+		$('body').toggleClass('stop');
 	});
+	// Team Slider
 
 	function login() {
 		var fields = $('#form1').serializeArray();
