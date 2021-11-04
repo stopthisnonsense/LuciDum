@@ -148,7 +148,7 @@ span,a {
 	width: 100%;
 }
 .wrap--new-home-background {
-	background-image: url(../images/home-hero-bg.png);
+	background-image: url(../images/home-new-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -159,7 +159,7 @@ span,a {
 }
 @media ( min-width: 769px ) {
 	.section--hero {
-		padding-top: 340px;
+		padding-top: 320px;
 	}
 }
 .section--hero .section__container {
@@ -172,7 +172,7 @@ span,a {
 	text-align: center;
 }
 
-@media ( min-width: 769px ) {
+@media ( min-width: 991px ) {
 	.section--hero .section__column {
 		margin-top: 0;
 		margin-bottom: 0;

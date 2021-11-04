@@ -7,7 +7,7 @@ get_header( 'new' );
 <div class="wrap wrap--new-home-background">
     <div class="section section--hero">
         <div class="container section__container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-sm-12 col-lg-6 section__column">
                 <h1 class="section__title">No More Unknowns</h1>
                 <p class="section__paragraph">Company News: Lucidum Secures New<br> Funding Round from Investors</p>
