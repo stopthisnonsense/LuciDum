@@ -23,17 +23,17 @@ get_header( 'new' );
 					<div class="col-sm-12 col-lg-2 section__column">
 					</div>
                     <?php while(have_posts()) {
-                    $content_classes = 'col-sm-12 section__column';
+                    $content_classes = 'col-sm-12 col-lg-8 section__column';
                     $form_fields = get_field('form');
-                    if( isset($form_fields) ) {
+                    if( false === $form_fields ) {
                         $content_classes = 'col-sm-12 col-lg-4 section__column';
                     }
                     the_post(); ?>
-                    <div class="<?= $content_classes; ?> left-message">
+                    <div class="<?= $content_classes; ?> section__column--left">
                         <?php
                         the_content(); ?>
                     </div>
-                    <?php if( isset($form_fields) ) { ?>
+                    <?php if( false === $form_fields ) { ?>
                         <?php
                             $form_maker = '';
                             if( !empty($form_fields['region']) ) {
@@ -49,10 +49,10 @@ get_header( 'new' );
                                 $form_maker .= "sfdcCampaignId: '". sanitize_text_field($form_fields['campaign']) . "',";
                             }
                         ?>
-                        <div class="col-sm-12 col-lg-4 section__column">
+                        <div class="<?= $content_classes; ?>">
                         <div class="card card--signup" id="form">
                             <?php if( !empty($form_fields['title'] ) ) { ?>
-                                <h2 class="card__title"><?= $form_fields['title']; ?></h2>
+                                <h2 class="card__title"><?= sanitize_text_field($form_fields['title']); ?></h2>
                             <?php
                             }?>
                             <?php if( !empty($form_maker) ) { ?>

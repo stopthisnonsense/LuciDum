@@ -46,6 +46,8 @@
 
 :root {
 	--section-padding: 30px;
+	--font--header: SFProText-Semibold;
+	--font--text: source-sans-pro;
 }
 
 @media (min-width: 768px) {
@@ -207,6 +209,10 @@ span,a {
 	margin-bottom: 1rem;
 }
 
+.section--hero a {
+	font-family: source-sans-pro;
+}
+
 @media(  min-width: 769px  ) {
 	.section--hero .section__paragraph {
 		font-size: 32px;
@@ -232,9 +238,45 @@ span,a {
 		font-size: 30px;
 	}
 }
+
 .ban-image {
 	object-fit: contain;
 }
+
+.section--content .section__column {
+	padding: 2rem;
+}
+
+.section--content :is(h1,h2,h3,h4,h5,h6) {
+	font-family: var(--font--header);
+}
+
+.section--content :not( h1,h2,h3,h4,h5,h6 ) {
+	font-family: var(--font--text);
+}
+
+.section--content a {
+	color: #3772ff;
+	position: relative;
+	font-family: var(--font--text);
+}
+.section--content a:before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: #3772ff;
+}
+
+.section--content a:hover::before {
+	left: 0;
+    width: 100%;
+}
+
 .section--about-new-home {
 	padding-top: 105px;
 	padding-bottom: 90px;
@@ -255,8 +297,6 @@ span,a {
 .section--about-new-home .section__column {
 	margin-top: 15px;
 	margin-bottom: 15px;
-}
-@media( min-width:769px) {
 }
 .section--about-new-home .section__image {
 	width: 100%;

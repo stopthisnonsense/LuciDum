@@ -12,7 +12,7 @@ get_header( 'new' );
         <div class="row align-items-center">
             <div class="col-sm-12 col-lg-6 section__column">
                 <h1 class="section__title">No More Unknowns</h1>
-                <p class="section__paragraph">Company News: Lucidum Secures New<br> Funding Round from Investors</p>
+                <p class="section__paragraph"><a href="<?php echo site_url(); ?>">Lucidum.io</a> Raises $15M in Series A Funding | Leading IT asset discovery platform partners with Point72 Ventures and GGV Capital to fuel business expansion</p>
                 <a class="section__button" href="<?php the_permalink(3600); ?>">See More</a>
             </div>
             <div class="col-sm-12 col-lg-6  section__column">
@@ -31,7 +31,7 @@ get_header( 'new' );
             if( $n_h_banner['images'] ) {
                 $images = $n_h_banner['images'];
                 foreach( $images as $image ) { ?>
-                <div class="col-6 col-md-3 col-xl">
+                <div class="col-4 col-md-3 col-xl">
                     <?php echo wp_get_attachment_image($image['image'], 'thumbnail', false, ['class' => 'my-1 img-fluid ban-image aligncenter' ]); ?>
                 </div>
                 <?php
