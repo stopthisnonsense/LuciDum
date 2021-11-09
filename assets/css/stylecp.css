@@ -196,6 +196,10 @@ span,a {
 	}
 }
 
+.section--hero-page .section__column {
+	text-align: center;
+}
+
 .section--hero .section__paragraph {
 	font-family: source-sans-pro;
 
@@ -228,7 +232,9 @@ span,a {
 		font-size: 30px;
 	}
 }
-
+.ban-image {
+	object-fit: contain;
+}
 .section--about-new-home {
 	padding-top: 105px;
 	padding-bottom: 90px;

@@ -15,7 +15,7 @@
                     'container' => false,
                 ] ); ?>
             </nav>
-            <div class="request-demo request-demo--new"><a href="/platform#requestdemoform"><?php the_field('header_button', 'Options');?></a></div>
+            <div class="request-demo request-demo--new"><a href="https://lucidum.io/request-a-demo/"><?php the_field('header_button', 'Options');?></a></div>
             <div class="mobile-toggler">
                 <span></span>
                 <span></span>
