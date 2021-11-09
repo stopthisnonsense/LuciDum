@@ -71,7 +71,7 @@ get_header( 'new' );
                     </div>
 					<div class="col-sm-12 col-lg-2 section__column">
 					</div>
-					
+
                     <?php
                     } ?>
 
