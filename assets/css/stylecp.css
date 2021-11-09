@@ -247,13 +247,32 @@ span,a {
 	padding: 2rem;
 }
 
+.section--content .section__column--content {
+	padding: 2rem 3rem;
+}
+
 .section--content :is(h1,h2,h3,h4,h5,h6) {
 	font-family: var(--font--header);
+	margin-bottom: 1rem;
+}
+
+.section--content h1 {
+	font-size: 34px;
+}
+
+.section--content h2 {
+	font-size: 22px;
+}
+
+.section--contet h3 {
+	font-size: 1rem;
 }
 
 .section--content :not( h1,h2,h3,h4,h5,h6 ) {
 	font-family: var(--font--text);
 }
+
+
 
 .section--content a {
 	color: #3772ff;
@@ -275,6 +294,10 @@ span,a {
 .section--content a:hover::before {
 	left: 0;
     width: 100%;
+}
+
+.section--content .section__column--content {
+	background-color: var(--white);
 }
 
 .section--about-new-home {
