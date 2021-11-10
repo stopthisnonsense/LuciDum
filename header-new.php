@@ -17,7 +17,7 @@
 				border-color: #3772ff;
 			}
 		</style>
-	
+
 	</head>
 
 	<body <?php post_class( 'new-home-landing' ); ?>>
@@ -28,14 +28,14 @@
 					<a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/new-logo.png" alt="logo"></a>
 				</div>
 				<div class="menu menu--new-home">
-				<nav>
+				<nav class="js-menu">
 					<?php wp_nav_menu( [
 						'theme_location' => 'menu-new-home',
 						'container' => false,
 					] ); ?>
 				</nav>
 				<div class="request-demo request-demo--new temporaryFont"><a href="https://lucidum.io/request-a-demo/" style="font-size: 20px;"><?php the_field('header_button', 'Options');?></a></div>
-				<div class="mobile-toggler">
+				<div class="js-toggle mobile-toggler">
 					<span></span>
 					<span></span>
 					<span></span>

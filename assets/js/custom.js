@@ -7,11 +7,6 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	// Mobile Menu
-	$('.mobile-toggler').click(function () {
-		$('.header nav').toggleClass('active');
-		$('body').toggleClass('stop');
-	});
 	// Team Slider
 
 	function login() {

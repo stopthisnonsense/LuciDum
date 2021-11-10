@@ -10,7 +10,7 @@ get_header( 'new' );
 	a.section__button:hover {
     background-color: #2D2D2D;
 	}
-	
+
 	.pp_default {
 		top: 800px !important;
 	}
@@ -42,8 +42,15 @@ get_header( 'new' );
             <?php
             if( $n_h_banner['images'] ) {
                 $images = $n_h_banner['images'];
-                foreach( $images as $image ) { ?>
-                <div class="col-4 col-md-3 col-xl">
+
+                foreach( $images as $image ) {
+                    $image_class = 'col-4 col-md-3 col-xl';
+                    if( $image['mobile_hide'] == true ) {
+                        $image_class = 'd-none d-md-block col-4 col-md-3 col-xl';
+                    }
+                    ?>
+
+                <div class="<?= $image_class; ?>">
                     <?php echo wp_get_attachment_image($image['image'], 'thumbnail', false, ['class' => 'my-1 img-fluid ban-image aligncenter' ]); ?>
                 </div>
                 <?php
@@ -62,7 +69,7 @@ get_header( 'new' );
             <div class="row">
                 <div class="col-sm-12 col-lg-6  section__column">
 					<?php echo do_shortcode('[video_lightbox_vimeo5 video_id=644307494 width=800 height=450 anchor="https://lucidum.io/wp-content/uploads/2021/11/video-placeholder.png"]'); ?>
-                    
+
 
                 </div>
                 <div class="col-sm-12 col-lg-6  section__column">

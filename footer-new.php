@@ -18,6 +18,19 @@
                       );
                   }
               })
+
+              $('.js-toggle').on('click', function () {
+                // console.log($('.mobile-toggler'), $('.header .js-menu'));
+                if ($('.js-menu').hasClass('active')) {
+                    $('.js-menu').removeClass('active');
+                } else {
+                    $('.js-menu').addClass('active');
+                }
+
+                // console.log($('.js-menu').addClass('active'));
+
+                // $('body').toggleClass('stop');
+            });
           });
     </script>
 

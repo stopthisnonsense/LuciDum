@@ -1216,13 +1216,16 @@ function theme_scripts() {
   wp_register_script( 'newquery-ui', 'https://code.jquery.com/ui/1.11.4/jquery-ui.js', ['newquery'], false, true );
   wp_enqueue_script( 'newquery-ui' );
 
-  wp_register_script('newquery', get_stylesheet_directory_uri() . '/assets/js/jquery-3.1.1.js', [], false, true );
+  wp_register_script('newquery', 'https://code.jquery.com/jquery-3.5.0.js', [], false, false, true );
   wp_enqueue_script( 'newquery' );
+
+  wp_register_script('newquery-migrate', 'https://code.jquery.com/jquery-migrate-3.3.2.min.js', ['newquery'], false, false, true );
+  wp_enqueue_script( 'newquery-migrate' );
 
   wp_register_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', [ 'newquery' ], false, true );
   wp_enqueue_script( 'bootstrap' );
 
-  wp_register_script('carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', ['newquery', 'bootstrap'], false, true);
+  wp_register_script('carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', ['newquery-migrate', 'bootstrap'], false, true);
   wp_enqueue_script('carousel');
   wp_add_inline_script( 'carousel', "
         $('.great-team.owl-carousel').owlCarousel({
@@ -1283,7 +1286,7 @@ function theme_scripts() {
 
   " );
 
-  wp_register_script('custom-theme-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.js', ['newquery'], false, true);
+  wp_register_script('custom-theme-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.js', ['newquery-migrate'], false, true);
   wp_enqueue_script('custom-theme-scripts');
 
   wp_register_script('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', ['newquery'], false, true);
