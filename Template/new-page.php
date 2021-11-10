@@ -11,7 +11,7 @@ get_header( 'new' );
         <div class="container section__container">
             <div class="row align-items-center">
                 <div class="col-sm-12 section__column">
-                    <h1 class="section__title"><?php the_title(); ?></h1>
+                    <h1 class="section__title"><?php if(!is_page('series-a-funding')){ the_title(); } ?></h1>
                 </div>
             </div>
         </div>
@@ -20,20 +20,20 @@ get_header( 'new' );
         <div class="section section--content">
             <div class="container section__container">
                 <div class="row section__row">
-					<div class="col-sm-12 col-lg-2 section__column">
-					</div>
+
                     <?php while(have_posts()) {
-                    $content_classes = 'col-sm-12 col-lg-8 section__column';
+                    $content_classes = 'col-sm-12 col-lg-8 section__column section__column--content';
                     $form_fields = get_field('form');
-                    if( false === $form_fields ) {
+                    if( $form_fields['exists'] ) {
                         $content_classes = 'col-sm-12 col-lg-4 section__column';
                     }
                     the_post(); ?>
-                    <div class="<?= $content_classes; ?> section__column--left">
-                        <?php
-                        the_content(); ?>
+                    <div class="col-sm-12 col-lg-2 section__column">
+					</div>
+                    <div class="<?= $content_classes; ?>">
+						<?php the_content(); ?>
                     </div>
-                    <?php if( false === $form_fields ) { ?>
+                    <?php if( $form_fields['exists'] ) { ?>
                         <?php
                             $form_maker = '';
                             if( !empty($form_fields['region']) ) {
@@ -69,9 +69,9 @@ get_header( 'new' );
                         </div>
 
                     </div>
-					<div class="col-sm-12 col-lg-2 section__column">
-					</div>
 
+                    <div class="col-sm-12 col-lg-2 section__column">
+					</div>
                     <?php
                     } ?>
 
